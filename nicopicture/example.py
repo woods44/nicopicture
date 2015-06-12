@@ -1,17 +1,18 @@
-__author__ = 'g1244785'
 #! /usr/bin/env/ python
 #-*- coding:utf-8 -*-
+__author__ = 'g1244785'
+
 
 import sys
 import urllib2
 import login
 import data
+from mechanize import Browser
 
 class Example(object):
 	def main(self):
-		print("aaaa")
 		a_login = login.Login()
-		a_opener = a_login.login()
-		d = data.Data()
-		d.reading_ranking(a_opener)
+		a_browser = a_login.login()
+		d = data.Data(a_browser)
+		d.reading_ranking()
 		return

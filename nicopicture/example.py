@@ -14,5 +14,8 @@ class Example(object):
 		a_login = login.Login()
 		a_browser = a_login.login()
 		d = data.Data(a_browser)
-		d.reading_ranking()
+		d.adult_ranking()
+		#d.fanart_ranking()
+		#d.legend_ranking()
+		#d.reading_ranking()
 		return

@@ -2,7 +2,6 @@
 # -*- coding:utf-8 -*-
 import urllib2
 import urllib
-import cookielib
 from mechanize import Browser
 
 """
@@ -32,11 +31,4 @@ class Login(object):
 		a_browser["mail_tel"] = self._user_name
 		a_browser["password"] = self._password
 		contents = a_browser.submit()
-		#header = {'User-Agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:38.0) Gecko/20100101 Firefox/38.0' ,'Referer':'http://lohas.nicoseiga.jp/o/ff21b6920d3482f4f0d406bf875e8657e488cfd4/1434074767/4437929'}
-		#request = urllib2.Request('http://lohas.nicoseiga.jp/priv/ff21b6920d3482f4f0d406bf875e8657e488cfd4/1434074767/4437929',None,header)
-		#response =  br.open(request)
-		#f = open("out","wb")
-		#f.write(response.read())
-		#f.close()
-		#response.close()
 		return a_browser

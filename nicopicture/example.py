@@ -11,6 +11,7 @@ from mechanize import Browser
 
 class Example(object):
 	def main(self):
+		
 		a_login = login.Login()
 		a_browser = a_login.login()
 		d = data.Data(a_browser)

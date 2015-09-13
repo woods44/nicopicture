@@ -9,7 +9,7 @@ from mechanize import Browser
 class HtmlGetter(object):
 	def __init__(self, a_browser):
 		self._a_browser = a_browser
-	
+
 	def html_get(self, a_url):
 		request = urllib2.Request(a_url)
 		try:
